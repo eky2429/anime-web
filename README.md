@@ -1,18 +1,6 @@
-# sinatra-template
+# anime-web
 
-Use this repository to create new Sinatra apps. 
+This website lists 10 animes that are coming up this year.
 
-Optionally, to use `ActiveRecord` for database operations, add to the `app.rb`:
-
-```ruby
-require "sinatra/activerecord"
-```
-
-And in the `config/environment.rb` file add this code block:
-
-```ruby
-configure do
-  # setup a database connection
-  set(:database, { adapter: "sqlite3", database: "db/development.sqlite3" })
-end
-```
+Note: The anime shown on the website depends on one variable (offset) in main.rb,
+so this value should constantly be updated to go with the trend / recent time.
