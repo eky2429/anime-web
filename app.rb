@@ -53,7 +53,7 @@ end
 get("/") do
   anime_elements = get_anime_info()
   "
-  <h1>Welcome to your Sinatra App!</h1>
-  <p>Define some routes in app.rb</p>
+  <h1>Top 10 animes that came out recently or will be coming out</h1>
+  <p>The list is shown below: </p>
   #{anime_elements}"
 end
