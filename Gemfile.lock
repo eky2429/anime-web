@@ -67,7 +67,7 @@ GEM
     multi_json (1.15.0)
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
-    nio4r (2.5.9)
+    nio4r (2.7.0)
     nokogiri (1.14.5-x86_64-darwin)
       racc (~> 1.4)
     nokogiri (1.14.5-x86_64-linux)
@@ -80,7 +80,7 @@ GEM
       coderay (~> 1.1)
       method_source (~> 1.0)
     public_suffix (5.0.4)
-    puma (5.6.7)
+    puma (6.4.2)
       nio4r (~> 2.0)
     racc (1.6.2)
     rack (2.2.8)
@@ -166,7 +166,7 @@ DEPENDENCIES
   grade_runner
   i18n
   pry
-  puma (~> 5.0)
+  puma (~> 6.0)
   rspec
   rspec-html-matchers
   sinatra
