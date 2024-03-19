@@ -43,7 +43,7 @@ def get_anime_info()
   #Creates text based on ordered hash elements
   official_anime_hash.each {
     |key, value|
-    anime_text += "<h2>#{key}</h2><p>Starting date: #{value.get_start_date()}</p>"
+    anime_text += "<h3>#{key}</h3><p>Starting date: #{value.get_start_date()}</p>"
     anime_text += "<p>End date: #{value.get_end_date()}</p>" if value.get_end_date() != nil
     anime_text += "<p>Rating: #{value.get_rating}</p>"
   }
@@ -51,9 +51,6 @@ def get_anime_info()
 end
 
 get("/") do
-  anime_elements = get_anime_info()
-  "
-  <h1>Top 10 animes that came out recently or will be coming out</h1>
-  <p>The list is shown below: </p>
-  #{anime_elements}"
+  @anime_elements = get_anime_info()
+  erb(:main)
 end
